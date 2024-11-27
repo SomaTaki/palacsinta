@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(200, 200, 200);
+    color: rgb(89, 89, 128);
+}
+#content {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+img {
+    float: right;
+    width: 45%;
+    border: 1px solid rgb(89, 89, 128);
+    border-radius: 10%;
+}
+h1 {
+    text-align: center;
+}
+h1, h2 {
+    text-transform: uppercase;
+}
+ul {
+    list-style: none;
+}
+@media screen and (max-width: 425px) {
+    img {
+        display: none;
+    }
+}
+p {
+    text-align: center;
+}
+a {
+    text-align: center;
+    text-decoration: none;
+    background-color: blueviolet;
+    color: yellow;
+}
+a:hover{
+    color: blueviolet;
+    background-color: yellow;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palacsinta Király</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <h1>A LEGJOBB PALACSINTATÉSZTA</h1>
+        <img src="./palacsinta_teszta.jpg" alt="">
+        <h2>Hozzávalók</h2>
+        <ul>
+            <li>20 dkg liszt (1 púpos ek = 2 dkg)</li>
+            <li>2 db tojás</li>
+            <li>3 dl tej</li>
+            <li>2 dl szénsavas ásványvíz</li>
+            <li>1 csipet só</li>
+            <li>3/4 dl olaj (+ a sütéshez)</li>
+        </ul>
+        
+        <br>
+        <h2>Elkészítés</h2>
+        <ol>
+            <li>A palacsintatészta hozzávalóit összekeverjük egy tálban, majd pár percig pihentetjük.</li>
+            <li>Az első palacsinta sütése előtt a forró serpenyőbe egy kevés olajat öntünk (a következő palacsintáknál erre már nincs szükség, maximálisan elegendő, ami kisül a tésztából).</li>
+            <li>A palacsintákat egyenként kisütjük, majd ízlés szerinti töltelékkel kínáljuk.</li>
+        </ol>
+
+        <br>
+        <h3>Add meg a véleményedet</h3>
+        <form method="get">
+            <label for="username">Felhasználónév:</label><br>
+            <input required type="text" id="username"><br><br>
+
+            <label for="password">Jelszó:</label><br>
+            <input min="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" required type="password"  id="password"><br><br>
+
+            <label>Mennyire ízlett?</label>
+            <input type="radio" name="rate" id="1"><label for="1">1</label>
+            <input type="radio" name="rate" id="2"><label for="2">2</label>
+            <input type="radio" name="rate" id="3"><label for="3">3</label>
+            <input type="radio" name="rate" id="4"><label for="4">4</label>
+            <input type="radio" name="rate" id="5"><label for="5">5</label>
+            <br><br>
+            <label for="easy">Mennyire volt követhető a leírás?</label><select>
+                <option value="0">---Válassz!---</option>
+                <option value="1">könnyű</option>
+                <option value="2">közepes</option>
+                <option value="3">nehéz</option>
+            </select><br><br>
+            <button type="submit">Beküldés</button>
+        </form>
+        <hr>
+        <p><a href="https://juratus.elte.hu/palacsintakiraly-egy-igazan-hagyomanyorzo-hely/" target="_blank">Készítette: Takács Soma |Toth Soma</a></p>
+    </div>
+</body>
+</html>
